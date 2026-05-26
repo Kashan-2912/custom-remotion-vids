@@ -86,7 +86,7 @@ export const Scene02Roadmap: React.FC = () => {
                 { label: "Topics", value: "24" },
                 { label: "Completed", value: "18" },
                 { label: "Hours", value: "46" },
-              ].map((stat, i) => (
+              ].map((stat) => (
                 <div key={stat.label} style={{ textAlign: "center" }}>
                   <div
                     style={{

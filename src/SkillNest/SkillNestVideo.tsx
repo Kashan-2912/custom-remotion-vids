@@ -15,6 +15,7 @@ import { Scene05Retention } from "./scenes/Scene05Retention";
 import { Scene06LearnLater } from "./scenes/Scene06LearnLater";
 import { Scene07PodsCommunity } from "./scenes/Scene07PodsCommunity";
 import { Scene08Challenges } from "./scenes/Scene08Challenges";
+import { AudioLayer } from "./components/AudioLayer";
 
 const SCENE_DURATION = 240; // 8 seconds at 30fps
 const TRANSITION_DURATION = 15; // 0.5 second overlap
@@ -49,6 +50,7 @@ const scenes = [
 export const SkillNestVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: "#0D0D0D" }}>
+      <AudioLayer />
       <TransitionSeries>
         {scenes.map((SceneComponent, i) => (
           <React.Fragment key={i}>
